@@ -1,0 +1,332 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"col",
+				"col-md-offset-3"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"img",
+				"img-responsive"
+			],
+			[
+				"co",
+				"col-xs-offset-2"
+			],
+			[
+				"container",
+				"container-fluid"
+			],
+			[
+				"fade",
+				"fadeThis"
+			],
+			[
+				"to",
+				"toggleWeather"
+			],
+			[
+				"get",
+				"getWeatherBtn"
+			],
+			[
+				"title",
+				"titleSection"
+			],
+			[
+				"week",
+				"weekWeather"
+			],
+			[
+				"precip",
+				"precipChance"
+			],
+			[
+				"dew",
+				"dewPointDegF"
+			],
+			[
+				"cure",
+				"currentDewpoint"
+			],
+			[
+				"ma",
+				"margin-bottom"
+			],
+			[
+				"currentWind",
+				"currentWindBearing"
+			],
+			[
+				"currentWi",
+				"currentWindSpeed"
+			],
+			[
+				"currentPre",
+				"currentPressure"
+			],
+			[
+				"curren",
+				"currentWindSpeed"
+			],
+			[
+				"cu",
+				"currentPressure"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"curr",
+				"currentTemp"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"button",
+				"buttons"
+			],
+			[
+				"text",
+				"text-center"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"search",
+				"searchInput"
+			],
+			[
+				"sea",
+				"searchInput"
+			],
+			[
+				"sae",
+				"searchIcon"
+			],
+			[
+				"tab",
+				"tab-panels"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"panel",
+				"panel-primary"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 81.0,
+		"last_filter": "Snippet: ",
+		"selected_items":
+		[
+			[
+				"Snippet: ",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"",
+				"View: Toggle Menu"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 146.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Nick's PC/Documents/GitHub/Wikipedia-Viewer/main.js",
+		"/C/Users/Nick's PC/Documents/GitHub/Wikipedia-Viewer/main.css",
+		"/C/Users/Nick's PC/Documents/GitHub/Wikipedia-Viewer/index.html",
+		"/C/Users/Nick's PC/Documents/GitHub/Random-Quote-Generator/main.js",
+		"/C/Users/Nick's PC/Documents/GitHub/Random-Quote-Generator/main.css",
+		"/C/Users/Nick's PC/Documents/GitHub/Random-Quote-Generator/index.html",
+		"/C/Users/Nick's PC/Documents/GitHub/Local-Weather-App/main.js",
+		"/C/Users/Nick's PC/Documents/GitHub/Local-Weather-App/main.css",
+		"/C/Users/Nick's PC/Documents/GitHub/Local-Weather-App/index.html",
+		"/C/Users/Nick's PC/Documents/GitHub/Local-Weather-App/README.md",
+		"/C/Users/Nick's PC/Documents/RQG/main.js",
+		"/C/Users/Nick's PC/Documents/RQG/main.css",
+		"/C/Users/Nick's PC/Documents/RQG/index.html",
+		"/C/Users/Nick's PC/Documents/GitHub/jQueryProjects/jQuery_Image_Slider/jQuery_Image_Slider.html",
+		"/C/Users/Nick's PC/Documents/GitHub/JSON_API_Projects/Album_Saver.JSON",
+		"/C/Users/Nick's PC/Documents/GitHub/JSON_API_Projects/Album_Saver.js",
+		"/C/Users/Nick's PC/Documents/GitHub/JSON_API_Projects/Album_Saver.html",
+		"/C/Users/Nick's PC/Documents/GitHub/JSON_api_practice/Album_Saver_Project/Album_Saver.JSON",
+		"/C/Users/Nick's PC/Documents/GitHub/jQueryProjects/jQuery_Image_Slider/jQuery_Image_Slider.js",
+		"/C/Users/Nick's PC/Documents/GitHub/jQueryProjects/jQuery_Image_Slider/jQuery_Image_Slider.css",
+		"/C/Users/Nick's PC/Documents/GitHub/jQueryProjects/jQuery_Tab_Panel_Widget/jQuery_Tab_Panel_Widget.css",
+		"/C/Users/Nick's PC/Documents/GitHub/jQueryProjects/jQuery_Tab_Panel_Widget/jQuery_Tab_Panel_Widget.html",
+		"/C/Users/Nick's PC/Documents/Sublime/jQueryTutorials/jQuery_Tab_Panel_Widget/jQuery_Tab_Panel_Widget.css",
+		"/C/Users/Nick's PC/Documents/Sublime/jQueryTutorials/jQuery_Tab_Panel_Widget/jQuery_Tab_Panel_Widget.html",
+		"/C/Users/Nick's PC/Documents/GitHub/jQueryProjects/jQuery_Event_Binding_Tutorial.html",
+		"/C/Users/Nick's PC/Documents/Sublime/jQueryTutorials/jQuery_Event_Binding_Tutorial.html",
+		"/C/Users/Nick's PC/Documents/test.html"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"center"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "README.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 189.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
