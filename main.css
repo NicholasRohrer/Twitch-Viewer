@@ -1,5 +1,8 @@
 body {
-	background-color: #4484CE;
+	background-color: #D9D9D9;
     font-size: 16px;
 }
 
+.jumbotron {
+	background-color: #4484CE;
+}
