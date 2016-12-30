@@ -14,3 +14,7 @@ body {
 hr {
 	width: 100%;
 }
+
+.searchInput {
+	border-radius: 15px;
+}
