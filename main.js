@@ -1,5 +1,5 @@
 $(document).ready();
 
-$.getJSON('https://api.twitch.tv/kraken/streams/freecodecamp?callback=?', function(data) {
+$.getJSON('https://wind-bow.gomix.me/twitch-api/streams/freecodecamp?callback=?', function(data) {
   console.log(data);
 });
