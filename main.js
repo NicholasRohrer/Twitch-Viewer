@@ -6,9 +6,9 @@ var $status1 = $('#status1');
 var $game1 = $('#game1');
 var $viewers1 = $('#viewers1');
 
-//$.getJSON('https://wind-bow.gomix.me/twitch-api/streams/freecodecamp?callback=?', function(data) {
- //console.log(data);
-//});
+$.getJSON('https://wind-bow.gomix.me/twitch-api/streams/freecodecamp?callback=?', function(data) {
+ console.log(data);
+});
 
 function getStreamerInfo() {
 
