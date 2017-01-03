@@ -3,7 +3,7 @@ $(document).ready();
 //cache the DOM
 
 // list of currently popular and interesting Twitch Streamers
-var streamers = ['summit1g', 'TimTheTatman', 'freecodecamp', 'Doublelift', 'shroud', 'Ninja', 'Arconyx', 'teamTALIMA', 'CohhCarnage'];
+var streamers = ['summit1g', 'LIRIK', 'TimTheTatman', 'freecodecamp', 'Doublelift', 'shroud', 'Ninja', 'Arconyx', 'teamTALIMA', 'CohhCarnage', 'jackfrags'];
 
 function getStreamerInfo() {
 
