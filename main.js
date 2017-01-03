@@ -1,13 +1,9 @@
 $(document).ready();
 
 //cache the DOM
-//var $streamer1 = $('#streamer1');
-//var $status1 = $('#status1');
-//var $game1 = $('#game1');
-//var $viewers1 = $('#viewers1');
 
 // list of currently popular and interesting Twitch Streamers
-var streamers = ['summit1g', 'freecodecamp'];
+var streamers = ['summit1g', 'TimTheTatman', 'freecodecamp', 'Doublelift', 'shroud'];
 
 function getStreamerInfo() {
 
@@ -17,28 +13,21 @@ function getStreamerInfo() {
 		  console.log(data);
 		  console.log(data.stream);
 
-		  $('#streamer' + i).html(streamers[i]);
+			$('#streamer' + i).html(streamers[i]);
 
-		  if (data.stream !== null) {
-		  	//console.log(data.stream['channel'].display_name);
-		  	//$streamer1.html(data.stream['channel'].display_name);
-		  	//$status1.html('Online');
-		  	//$game1.html(data.stream['game']);
-		  	//$viewers1.html(data.stream['viewers']);
+		  	if (data.stream !== null) {
 
-		  	$('#status' + i).html('Online');
-		  	$('#game' + i).html(data.stream['game']);
-		  	$('#viewers' + i).html('Viewers: ' + data.stream['viewers'])
+				$('#status' + i).html('Online');
+			  	$('#game' + i).html(data.stream['game']);
+			  	$('#viewers' + i).html('Viewers: ' + data.stream['viewers'])
 
+			 } 
 
-		  } 
+		  	else if (data.stream === null) {
 
-		  else if (data.stream === null) {
+		  		$('#status' + i).html('Offline');
 
-		  	//$status1.html('Offline');
-		  	$('#status' + i).html('Offline');
-		  }
-		  	
+		  	}	
 		});
 	}
 }
