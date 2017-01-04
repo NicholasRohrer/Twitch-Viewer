@@ -10,8 +10,8 @@ function getStreamerInfo() {
 	for (let i = 0; i < streamers.length; i++) {
 
 		$.getJSON('https://wind-bow.gomix.me/twitch-api/streams/' + streamers[i] + '?callback=?', function(data) {
-		  console.log(data);
-		  console.log(data.stream);
+		  //console.log(data);
+		  //console.log(data.stream.preview);
 
 			$('#streamer' + i).html(streamers[i]);
 
@@ -20,6 +20,8 @@ function getStreamerInfo() {
 				$('#status' + i).html('Online');
 			  	$('#game' + i).html(data.stream['game']);
 			  	$('#viewers' + i).html('Viewers: ' + data.stream['viewers'])
+			  	//console.log(data.stream.preview);
+			  	$('#img' + i).attr("src", data.stream.preview['small']);
 
 			 } 
 
