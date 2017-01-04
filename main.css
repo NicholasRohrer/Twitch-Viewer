@@ -31,3 +31,7 @@ hr {
 .page1-well {
 	background-color: #F19F4D;
 }
+
+.right {
+	float: right;
+}
