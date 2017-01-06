@@ -12,3 +12,15 @@ body {
 .panel-group {
 	margin-top: 30px;
 }
+
+.panel-body {
+	background-color: #F19F4D;
+	opacity: 0.9;
+	text-decoration: none;
+}
+
+.panel-body:hover {
+	opacity: 1.0;
+	cursor: pointer; 
+	cursor: hand;
+}
