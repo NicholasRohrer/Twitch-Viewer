@@ -3,35 +3,6 @@ body {
     font-size: 16px;
 }
 
-.jumbotron {
-	background-color: #4484CE;
-	border-radius: 0px;
-}
-
-.nav-pills {
-	background-color: #F19F4D; 
-}
-
-.nav-pill > li.active > a,
-.nav-pill > li.active > a:hover,
-.nav-pils > li.active > a:focus {
-
-	background-color: #4484CE; 
-	color: #4484CE;
-}
-
-hr {
-	width: 100%;
-}
-
 .searchInput {
 	border-radius: 15px;
-}
-
-.page1-well {
-	background-color: #F19F4D;
-}
-
-.right {
-	float: right;
 }
