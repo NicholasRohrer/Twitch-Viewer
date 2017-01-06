@@ -29,6 +29,7 @@ body {
 	
 	.panel-group {
 		width:700px;
+		margin: auto;
 	}
 
 }

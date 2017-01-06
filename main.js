@@ -21,7 +21,7 @@ function getStreamerInfo() {
 			  	$('#game' + i).html(data.stream['game']);
 			  	$('#viewers' + i).html('Viewers: ' + data.stream['viewers'])
 			  	//console.log(data.stream.preview);
-			  	$('#img' + i).attr("src", data.stream.preview['small']);
+			  	$('#img' + i).attr("src", data.stream.preview['medium']);
 
 			 } 
 
