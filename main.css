@@ -47,16 +47,13 @@ body {
 		cursor: hand;
 	}
 
-
-
-
-
 }
 
 /* Active for anything smaller than 767 px, tablet sized */
 @media screen and (max-width: 767px){
-	.hideOnMobile {
-		display: none;
+	.mobile {
+		font-size: 50%;
+		margin-top: 10px;
 	}
 
 }
