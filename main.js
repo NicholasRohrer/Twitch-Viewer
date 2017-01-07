@@ -35,6 +35,7 @@ function getStreamerInfo() {
 		  		// clears any top margin from game ID if streamer is offline
 		  		$('#game' + i).addClass("hideInfo");
 		  		$('#viewers' + i).addClass("hideInfo");
+		  		$('#img' + i).addClass("hideInfo");
 
 		  	}	
 		});
