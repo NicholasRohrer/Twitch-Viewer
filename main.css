@@ -26,8 +26,19 @@ body {
 	cursor: hand;
 }
 
-/* Active for anything larger than 1024 px, laptop sized */
-@media screen and (min-width: 1024px){
+.mobile {
+	margin-top: 20px;
+}
+
+img {
+	box-shadow: 3px 3px 3px grey;
+	border-style: solid;
+	border-color: black;
+    border-width: 2px;
+}
+
+/* Active for anything larger than 767 px, laptop sized */
+@media screen and (min-width: 768px){
 	
 	.panel-group {
 		width: 700px;
@@ -49,11 +60,14 @@ body {
 
 }
 
-/* Active for anything smaller than 767 px, tablet sized */
-@media screen and (max-width: 767px){
+/* Active for anything smaller than 532 px, phone sized */
+@media screen and (max-width: 532px){
 	.mobile {
 		font-size: 50%;
 		margin-top: 10px;
 	}
 
+	.title {
+		font-size: 80%;
+	}
 }
