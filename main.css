@@ -15,21 +15,49 @@ body {
 
 .panel-body {
 	background-color: #F19F4D;
-	opacity: 0.9;
+	opacity: 1.0;
 	text-decoration: none;
+	font-size: 2em;
 }
 
 .panel-body:hover {
-	opacity: 1.0;
+	opacity: 0.9;
 	cursor: pointer; 
 	cursor: hand;
 }
 
+/* Active for anything larger than 1024 px */
 @media screen and (min-width: 1024px){
 	
 	.panel-group {
-		width:700px;
+		width: 700px;
 		margin: auto;
 	}
 
+	.panel-body {
+		background-color: #F19F4D;
+		opacity: 1.0;
+		text-decoration: none;
+		font-size: 2.5em;
+	}
+
+	.panel-body:hover {
+		opacity: 0.9;
+		cursor: pointer; 
+		cursor: hand;
+	}
+
+
+
+}
+
+/* Active for anything smaller than 767 px, tablet sized */
+@media screen and (max-width: 767px){
+	.hideOnMobile {
+		display: none;
+	}
+
+	img {
+		margin: auto;
+	}
 }
