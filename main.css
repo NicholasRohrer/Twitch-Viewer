@@ -23,8 +23,17 @@ body {
 	cursor: hand;
 }
 
+.hideInfo {
+	margin-top: 0px;
+	display: none;
+}
+
+.showInfo {
+	margin-top: 5%;
+}
+
 .mobile {
-	margin-top: 20px;
+	font-size: 80%;
 }
 
 img {

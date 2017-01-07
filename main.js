@@ -23,11 +23,18 @@ function getStreamerInfo() {
 			  	//console.log(data.stream.preview);
 			  	$('#img' + i).attr("src", data.stream.preview['medium']);
 
+			  	// adds margin to top of game ID
+			  	$('#game' + i).addClass("showInfo");
+
 			 } 
 
 		  	else if (data.stream === null) {
 
 		  		$('#status' + i).html('Offline');
+
+		  		// clears any top margin from game ID if streamer is offline
+		  		$('#game' + i).addClass("hideInfo");
+		  		$('#viewers' + i).addClass("hideInfo");
 
 		  	}	
 		});
