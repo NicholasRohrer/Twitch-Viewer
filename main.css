@@ -26,7 +26,7 @@ body {
 	cursor: hand;
 }
 
-/* Active for anything larger than 1024 px */
+/* Active for anything larger than 1024 px, laptop sized */
 @media screen and (min-width: 1024px){
 	
 	.panel-group {
@@ -49,6 +49,8 @@ body {
 
 
 
+
+
 }
 
 /* Active for anything smaller than 767 px, tablet sized */
@@ -57,7 +59,4 @@ body {
 		display: none;
 	}
 
-	img {
-		margin: auto;
-	}
 }
