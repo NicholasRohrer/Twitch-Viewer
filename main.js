@@ -10,11 +10,11 @@ function getStreamerInfo() {
 	for (let i = 0; i < streamers.length; i++) {
 
 		$.getJSON('https://wind-bow.gomix.me/twitch-api/streams/' + streamers[i] + '?callback=?', function(data) {
-		  //console.log(data);
-		  //console.log(data.stream.preview);
 
 			$('#streamer' + i).html(streamers[i]);
+			$('#url' + i).attr("href", 'https://www.twitch.tv/' + streamers[i]);
 
+			// if streamer is online
 		  	if (data.stream !== null) {
 
 				$('#status' + i).html('Online');
@@ -22,12 +22,14 @@ function getStreamerInfo() {
 			  	$('#viewers' + i).html('Viewers: ' + data.stream['viewers'])
 			  	//console.log(data.stream.preview);
 			  	$('#img' + i).attr("src", data.stream.preview['medium']);
+			  	
 
 			  	// adds margin to top of game ID
 			  	$('#game' + i).addClass("showInfo");
 
 			 } 
 
+			// if streamer is offline
 		  	else if (data.stream === null) {
 
 		  		$('#status' + i).html('Offline');
@@ -42,4 +44,5 @@ function getStreamerInfo() {
 	}
 }
 
+// populate streamer info when page loads
 getStreamerInfo();
