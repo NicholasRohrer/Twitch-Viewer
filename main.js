@@ -46,8 +46,16 @@ function getStreamerInfo() {
 	}
 }
 
+function openNav() {
+	document.getElementById("filterSideNav").style.width = '250px';
+}
+
+function closeNav() {
+	document.getElementById("filterSideNav").style.width = '0';
+}
+
 // populate streamer info when page loads
 getStreamerInfo();
 
 // on click of filter button
-$filterButton.on('click', toggleFilter);
+$filterButton.on('click', openNav);
