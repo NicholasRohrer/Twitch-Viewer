@@ -1,14 +1,17 @@
 $(document).ready();
 
 //cache the DOM
+var $filterButton = $('#filterButton');
 
 // list of currently popular and interesting Twitch Streamers
 var streamers = ['summit1g', 'LIRIK', 'TimTheTatman', 'Doublelift', 'shroud', 'Ninja', 'CohhCarnage', 'jackfrags', 'freecodecamp', 'Arconyx', 'teamTALIMA'];
+var orderedSteamers = [];
 
 function getStreamerInfo() {
 
 	for (let i = 0; i < streamers.length; i++) {
 
+		// make API call for each streamer in array
 		$.getJSON('https://wind-bow.gomix.me/twitch-api/streams/' + streamers[i] + '?callback=?', function(data) {
 
 			$('#streamer' + i).html(streamers[i]);
@@ -26,7 +29,6 @@ function getStreamerInfo() {
 
 			  	// adds margin to top of game ID
 			  	$('#game' + i).addClass("showInfo");
-
 			 } 
 
 			// if streamer is offline
@@ -46,3 +48,6 @@ function getStreamerInfo() {
 
 // populate streamer info when page loads
 getStreamerInfo();
+
+// on click of filter button
+$filterButton.on('click', toggleFilter);
