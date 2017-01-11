@@ -46,12 +46,20 @@ function getStreamerInfo() {
 	}
 }
 
+// opens side navigation and pushes body off screen
 function openNav() {
 	document.getElementById("filterSideNav").style.width = '250px';
+	document.body.style.marginLeft = '250px';
+	document.body.style.marginRight = '-250px';
+	
 }
 
+// closes side naviagtion and returns body to original position
 function closeNav() {
 	document.getElementById("filterSideNav").style.width = '0';
+	document.body.style.marginLeft = '0';
+	document.body.style.marginRight = '0';
+	
 }
 
 // populate streamer info when page loads
