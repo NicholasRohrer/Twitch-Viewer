@@ -5,7 +5,6 @@ var $filterButton = $('#filterButton');
 
 // list of currently popular and interesting Twitch Streamers
 var streamers = ['summit1g', 'LIRIK', 'TimTheTatman', 'Doublelift', 'shroud', 'Ninja', 'CohhCarnage', 'jackfrags', 'freecodecamp', 'Arconyx', 'teamTALIMA'];
-var orderedSteamers = [];
 
 function getStreamerInfo() {
 
@@ -22,13 +21,14 @@ function getStreamerInfo() {
 
 				$('#status' + i).html('Online');
 			  	$('#game' + i).html(data.stream['game']);
-			  	$('#viewers' + i).html('Viewers: ' + data.stream['viewers'])
-			  	//console.log(data.stream.preview);
+			  	$('#viewers' + i).html('Viewers: ' + data.stream['viewers'])			
 			  	$('#img' + i).attr("src", data.stream.preview['medium']);
 			  	
-
 			  	// adds margin to top of game ID
 			  	$('#game' + i).addClass("showInfo");
+
+			  	// adds online class to panel
+			  	$('#panel' + i).addClass('online');
 			 } 
 
 			// if streamer is offline
@@ -40,6 +40,9 @@ function getStreamerInfo() {
 		  		$('#game' + i).addClass("hideInfo");
 		  		$('#viewers' + i).addClass("hideInfo");
 		  		$('#img' + i).addClass("hideInfo");
+
+		  		// adds offline class to panel
+			  	$('#panel' + i).addClass('offline');
 
 		  	}	
 		});
@@ -61,6 +64,32 @@ function closeNav() {
 	document.body.style.marginLeft = '0';
 	document.body.style.marginRight = '0';
 	document.body.style.overflow = 'visible';
+}
+
+function filterOnline() {
+
+	// iterate through streamer array and hide all offline streamers
+	for (let x = 0; x < streamers.length; x++) {
+		if ( $('#panel' + x).hasClass('online') ) {
+			$('#panel' + x).toggleClass('showOnline');
+		}
+		else if ( $('#panel' + x).hasClass('offline') ) {
+			$('#panel' + x).toggleClass('hideOffline');
+		}
+	}
+}
+
+function filterOnline() {
+
+	// iterate through streamer array and hide all online streamers
+	for (let y = 0; y < streamers.length; y++) {
+		if ( $('#panel' + x).hasClass('online') ) {
+			$('#panel' + x).toggleClass('showOnline');
+		}
+		else if ( $('#panel' + x).hasClass('offline') ) {
+			$('#panel' + x).toggleClass('hideOffline');
+		}
+	}
 }
 
 // populate streamer info when page loads

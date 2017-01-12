@@ -95,6 +95,15 @@ img {
     margin-left: 50px;
 }
 
+/* Used for filteing streamers by online status */
+.showOnline {
+	display: contents;
+}
+
+.hideOffline {
+	display: none;
+}
+
 /* Active for anything larger than 767 px, laptop sized */
 @media screen and (min-width: 768px){
 	
