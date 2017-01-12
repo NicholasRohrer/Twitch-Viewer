@@ -95,7 +95,7 @@ img {
     margin-left: 50px;
 }
 
-/* Used for filteing streamers by online status */
+/* Used for filtering streamers by online or offline status */
 .showOnline {
 	display: contents;
 }

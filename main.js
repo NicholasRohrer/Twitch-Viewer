@@ -6,6 +6,7 @@ var $filterButton = $('#filterButton');
 // list of currently popular and interesting Twitch Streamers
 var streamers = ['summit1g', 'LIRIK', 'TimTheTatman', 'Doublelift', 'shroud', 'Ninja', 'CohhCarnage', 'jackfrags', 'freecodecamp', 'Arconyx', 'teamTALIMA'];
 
+// makes Twitch API call and fills in streamer html information
 function getStreamerInfo() {
 
 	for (let i = 0; i < streamers.length; i++) {
@@ -66,8 +67,12 @@ function closeNav() {
 	document.body.style.overflow = 'visible';
 }
 
+// hides all offline streamers, shows only online streamers
 function filterOnline() {
+
+	// reset filtering
 	filterAll();
+
 	// iterate through streamer array and hide all offline streamers
 	for (let x = 0; x < streamers.length; x++) {
 		if ( $('#panel' + x).hasClass('online') ) {
@@ -79,9 +84,12 @@ function filterOnline() {
 	}
 }
 
+// hides all online streamers, shows only offline streamers
 function filterOffline() {
 
+	// resets filtering
 	filterAll();
+
 	// iterate through streamer array and hide all online streamers
 	for (let y = 0; y < streamers.length; y++) {
 		if ( $('#panel' + y).hasClass('online') ) {
@@ -93,6 +101,7 @@ function filterOffline() {
 	}
 }
 
+// resets all filtering and shows all streamers
 function filterAll() {
 
 	// iterate through streamer array and show all streamers
