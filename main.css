@@ -85,6 +85,8 @@ img {
 
 .sideNav a:hover, .offcanvas a:focus{
     color: #f1f1f1;
+    cursor: hand;
+	cursor: pointer;
 }
 
 .sideNav .closebtn {
@@ -93,6 +95,11 @@ img {
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+}
+
+#filterSideNav a:hover {
+	cursor: hand;
+	cursor: pointer;
 }
 
 /* Used for filtering streamers by online or offline status */
