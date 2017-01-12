@@ -51,6 +51,7 @@ function openNav() {
 	document.getElementById("filterSideNav").style.width = '250px';
 	document.body.style.marginLeft = '250px';
 	document.body.style.marginRight = '-250px';
+	document.body.style.overflow = 'hidden';
 	
 }
 
@@ -59,7 +60,7 @@ function closeNav() {
 	document.getElementById("filterSideNav").style.width = '0';
 	document.body.style.marginLeft = '0';
 	document.body.style.marginRight = '0';
-	
+	document.body.style.overflow = 'visible';
 }
 
 // populate streamer info when page loads
