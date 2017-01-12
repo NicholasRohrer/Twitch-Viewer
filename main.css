@@ -104,6 +104,18 @@ img {
 	display: none;
 }
 
+.hideOnline {
+	display: none;
+}
+
+.showOffline {
+	display: contents;
+}
+
+.showAll {
+	display: contents;
+}
+
 /* Active for anything larger than 767 px, laptop sized */
 @media screen and (min-width: 768px){
 	

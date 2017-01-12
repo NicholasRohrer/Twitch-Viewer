@@ -67,7 +67,7 @@ function closeNav() {
 }
 
 function filterOnline() {
-
+	filterAll();
 	// iterate through streamer array and hide all offline streamers
 	for (let x = 0; x < streamers.length; x++) {
 		if ( $('#panel' + x).hasClass('online') ) {
@@ -79,16 +79,25 @@ function filterOnline() {
 	}
 }
 
-function filterOnline() {
+function filterOffline() {
 
+	filterAll();
 	// iterate through streamer array and hide all online streamers
 	for (let y = 0; y < streamers.length; y++) {
-		if ( $('#panel' + x).hasClass('online') ) {
-			$('#panel' + x).toggleClass('showOnline');
+		if ( $('#panel' + y).hasClass('online') ) {
+			$('#panel' + y).toggleClass('hideOnline');
 		}
-		else if ( $('#panel' + x).hasClass('offline') ) {
-			$('#panel' + x).toggleClass('hideOffline');
+		else if ( $('#panel' + y).hasClass('offline') ) {
+			$('#panel' + y).toggleClass('showOffline');
 		}
+	}
+}
+
+function filterAll() {
+
+	// iterate through streamer array and show all streamers
+	for (let z = 0; z < streamers.length; z++) {
+		$('#panel' + z).toggleClass('showAll');
 	}
 }
 
