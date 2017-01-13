@@ -14,12 +14,14 @@ function getStreamerInfo() {
 		// make API call for each streamer in array
 		$.getJSON('https://wind-bow.gomix.me/twitch-api/streams/' + streamers[i] + '?callback=?', function(data) {
 
+			// streamer name and url to twitch page
 			$('#streamer' + i).html(streamers[i]);
 			$('#url' + i).attr("href", 'https://www.twitch.tv/' + streamers[i]);
 
 			// if streamer is online
 		  	if (data.stream !== null) {
 
+		  		// fill in streamer information
 				$('#status' + i).html('Online');
 			  	$('#game' + i).html(data.stream['game']);
 			  	$('#viewers' + i).html('Viewers: ' + data.stream['viewers'])			
@@ -35,6 +37,7 @@ function getStreamerInfo() {
 			// if streamer is offline
 		  	else if (data.stream === null) {
 
+		  		// fill in streamer information
 		  		$('#status' + i).html('Offline');
 
 		  		// clears any top or bottom margin from game ID if streamer is offline
