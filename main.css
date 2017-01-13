@@ -166,4 +166,21 @@ img {
   		font-size: 18px;
   	}
 
+  	/* Used for filtering streamers by online or offline status */
+.showOnline {
+	display: contents;
+}
+
+.hideOffline {
+	display: none;
+}
+
+.hideOnline {
+	display: none;
+}
+
+.showOffline {
+	display: contents;
+}
+
 }
