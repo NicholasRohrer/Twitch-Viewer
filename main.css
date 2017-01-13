@@ -166,21 +166,29 @@ img {
   		font-size: 18px;
   	}
 
-  	/* Used for filtering streamers by online or offline status */
-.showOnline {
-	display: contents;
 }
 
-.hideOffline {
-	display: none;
-}
+/* Active for anything smaller than 365 px, phone sized */
+@media screen and (max-width: 365px){
+	.mobile {
+		font-size: 40%;
+		margin-top: 10px;
+	}
 
-.hideOnline {
-	display: none;
-}
+	.title {
+		font-size: 60%;
+	}
 
-.showOffline {
-	display: contents;
-}
+	.button {
+		font-size: 80%;
+	}
+
+	.sidenav {
+		padding-top: 15px;
+	}
+  
+  	.sidenav a {
+  		font-size: 18px;
+  	}
 
 }
