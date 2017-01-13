@@ -106,18 +106,26 @@ img {
 /* Used for filtering streamers by online or offline status */
 .showOnline {
 	display: contents;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
 .hideOffline {
 	display: none;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
 .hideOnline {
 	display: none;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
 .showOffline {
 	display: contents;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
 /* Active for anything larger than 767 px, laptop sized */
