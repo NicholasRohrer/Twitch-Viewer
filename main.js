@@ -107,10 +107,10 @@ function filterAll() {
 
 	// iterate through streamer array and show all streamers
 	for (let z = 0; z < streamers.length; z++) {
-		if ( $('#panel' + z).hasClass('online') ) {
+		if ( $('#panel' + z).hasClass('hideOnline') ) {
 			$('#panel' + z).removeClass('hideOnline');
 		}
-		else if ( $('#panel' + z).hasClass('offline') ) {
+		else if ( $('#panel' + z).hasClass('hideOffline') ) {
 			$('#panel' + z).removeClass('hideOffline');
 		}
 	}
