@@ -37,10 +37,8 @@ function getStreamerInfo() {
 
 		  		$('#status' + i).html('Offline');
 
-		  		// clears any top margin from game ID if streamer is offline
-		  		$('#game' + i).addClass("hideInfo");
-		  		$('#viewers' + i).addClass("hideInfo");
-		  		$('#img' + i).addClass("hideInfo");
+		  		// clears any top or bottom margin from game ID if streamer is offline
+		  		$('#div' + i).addClass('hideInfo');
 
 		  		// adds offline class to panel
 			  	$('#panel' + i).addClass('offline');
