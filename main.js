@@ -76,10 +76,10 @@ function filterOnline() {
 
 	// iterate through streamer array and hide all offline streamers
 	for (let x = 0; x < streamers.length; x++) {
-		if ( $('#panel' + x).hasClass('online') ) {
-			$('#panel' + x).addClass('showOnline');
-		}
-		else if ( $('#panel' + x).hasClass('offline') ) {
+		//if ( $('#panel' + x).hasClass('online') ) {
+		//	$('#panel' + x).addClass('showOnline');
+		//}
+		if ( $('#panel' + x).hasClass('offline') ) {
 			$('#panel' + x).addClass('hideOffline');
 		}
 	}
@@ -96,9 +96,9 @@ function filterOffline() {
 		if ( $('#panel' + y).hasClass('online') ) {
 			$('#panel' + y).addClass('hideOnline');
 		}
-		else if ( $('#panel' + y).hasClass('offline') ) {
-			$('#panel' + y).addClass('showOffline');
-		}
+		//else if ( $('#panel' + y).hasClass('offline') ) {
+			//$('#panel' + y).addClass('showOffline');
+		//}
 	}
 }
 
