@@ -77,10 +77,10 @@ function filterOnline() {
 	// iterate through streamer array and hide all offline streamers
 	for (let x = 0; x < streamers.length; x++) {
 		if ( $('#panel' + x).hasClass('online') ) {
-			$('#panel' + x).toggleClass('showOnline');
+			$('#panel' + x).addClass('showOnline');
 		}
 		else if ( $('#panel' + x).hasClass('offline') ) {
-			$('#panel' + x).toggleClass('hideOffline');
+			$('#panel' + x).addClass('hideOffline');
 		}
 	}
 }
@@ -94,10 +94,10 @@ function filterOffline() {
 	// iterate through streamer array and hide all online streamers
 	for (let y = 0; y < streamers.length; y++) {
 		if ( $('#panel' + y).hasClass('online') ) {
-			$('#panel' + y).toggleClass('hideOnline');
+			$('#panel' + y).addClass('hideOnline');
 		}
 		else if ( $('#panel' + y).hasClass('offline') ) {
-			$('#panel' + y).toggleClass('showOffline');
+			$('#panel' + y).addClass('showOffline');
 		}
 	}
 }
