@@ -120,6 +120,10 @@ img {
 	margin-bottom: 0px;
 }
 
+.hideThis {
+	display: none;
+}
+
 /* Credits */
 .credits {
 	margin-top: 20px;

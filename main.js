@@ -109,6 +109,29 @@ function filterAll() {
 	}
 }
 
+// filters streamers by name
+function searchName() {
+	var input = $('#searchInput').val();
+	var filter = input.toUpperCase();
+	var name, panel;
+
+	for (let a = 0; a < 11; a++) {
+		name = $('#streamer' + a).val();
+		test = name.toUpperCase();
+		panel = $('#panel' + a);
+
+		if (test.indexOf(filter) > -1) {
+			panel.removeClass('hideThis');
+		}
+
+		else {
+			
+			panel.addClass('hideThis');
+		}
+	}
+}
+
+
 // populate streamer info when page loads
 getStreamerInfo();
 
