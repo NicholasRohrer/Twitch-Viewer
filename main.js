@@ -15,7 +15,7 @@ function getStreamerInfo() {
 		$.getJSON('https://wind-bow.gomix.me/twitch-api/streams/' + streamers[i] + '?callback=?', function(data) {
 
 			// streamer name and url to twitch page
-			$('#streamer' + i).html(streamers[i]);
+			$('#streamer'+ i).html(streamers[i]);
 			$('#url' + i).attr("href", 'https://www.twitch.tv/' + streamers[i]);
 
 			// if streamer is online
@@ -57,7 +57,6 @@ function openNav() {
 	document.body.style.marginLeft = '250px';
 	document.body.style.marginRight = '-250px';
 	document.body.style.overflow = 'hidden';
-	
 }
 
 // closes side naviagtion and returns body to original position

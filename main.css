@@ -116,6 +116,11 @@ img {
 	margin-bottom: 0px;
 }
 
+/* Credits */
+.credits {
+	margin-top: 20px;
+}
+
 /* Active for anything larger than 767 px, laptop sized */
 @media screen and (min-width: 768px){
 	
