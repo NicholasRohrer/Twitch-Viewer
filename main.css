@@ -21,6 +21,8 @@ body {
     width: 100%;
     margin-bottom: 20px;
     font-size: 1.5em;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
 }
 
 .button:hover {
@@ -33,6 +35,7 @@ body {
 	opacity: 1.0;
 	text-decoration: none;
 	font-size: 2em;
+	font-family: 'Oswald', sans-serif;
 }
 
 .panel-body:hover {
@@ -53,6 +56,7 @@ body {
 
 .mobile {
 	font-size: 80%;
+	font-family: 'Roboto', sans-serif;
 }
 
 img {
@@ -119,6 +123,14 @@ img {
 /* Credits */
 .credits {
 	margin-top: 20px;
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.5em;
+	color: #F19F4D;
+}
+
+.credits a {
+	color: #F19F4D;
+	text-decoration: underline;
 }
 
 /* Active for anything larger than 767 px, laptop sized */
@@ -166,6 +178,14 @@ img {
   	.sidenav a {
   		font-size: 18px;
   	}
+
+  	/* Credits */
+	.credits {
+		margin-top: 20px;
+		font-family: 'Oswald', sans-serif;
+		font-size: 80%;
+		color: #F19F4D;
+	}
 
 }
 
