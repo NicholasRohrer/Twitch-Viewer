@@ -133,10 +133,12 @@ function searchName() {
 		name = $('#streamer' + a).html();
 		name = name.toUpperCase();
 		
+		// if user input string matches any part of streamer name, keep showing panel
 		if (name.indexOf(filter) > -1) {
 			panels[a].removeClass("hideThis");
 		}
 
+		// if no match is found anywhere in streamer name, hide panel
 		else {
 			panels[a].addClass("hideThis");
 		}
