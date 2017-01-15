@@ -2,6 +2,20 @@ $(document).ready();
 
 //cache the DOM
 var $filterButton = $('#filterButton');
+var $panel0 = $('#panel0');
+var $panel1 = $('#panel1');
+var $panel2 = $('#panel2');
+var $panel3 = $('#panel3');
+var $panel4 = $('#panel4');
+var $panel5 = $('#panel5');
+var $panel6 = $('#panel6');
+var $panel7 = $('#panel7');
+var $panel8 = $('#panel8');
+var $panel9 = $('#panel9');
+var $panel10 = $('#panel10');
+
+// array of panels
+var panels = [$panel0, $panel1, $panel2, $panel3, $panel4, $panel5, $panel6, $panel7, $panel8, $panel9, $panel10];
 
 // list of currently popular and interesting Twitch Streamers
 var streamers = ['summit1g', 'LIRIK', 'TimTheTatman', 'Doublelift', 'shroud', 'Ninja', 'CohhCarnage', 'jackfrags', 'freecodecamp', 'Arconyx', 'teamTALIMA'];
@@ -31,7 +45,7 @@ function getStreamerInfo() {
 			  	$('#game' + i).addClass("showInfo");
 
 			  	// adds online class to panel
-			  	$('#panel' + i).addClass('online');
+			  	panels[i].addClass('online');
 			 } 
 
 			// if streamer is offline
@@ -44,7 +58,7 @@ function getStreamerInfo() {
 		  		$('#div' + i).addClass('hideInfo');
 
 		  		// adds offline class to panel
-			  	$('#panel' + i).addClass('offline');
+			  	panels[i].addClass('offline');
 
 		  	}	
 		});
@@ -75,8 +89,8 @@ function filterOnline() {
 
 	// iterate through streamer array and hide all offline streamers
 	for (let x = 0; x < streamers.length; x++) {
-		if ( $('#panel' + x).hasClass('offline') ) {
-			$('#panel' + x).addClass('hideOffline');
+		if ( panels[x].hasClass('offline') ) {
+			panels[x].addClass('hideOffline');
 		}
 	}
 }
@@ -89,8 +103,8 @@ function filterOffline() {
 
 	// iterate through streamer array and hide all online streamers
 	for (let y = 0; y < streamers.length; y++) {
-		if ( $('#panel' + y).hasClass('online') ) {
-			$('#panel' + y).addClass('hideOnline');
+		if ( panels[y].hasClass('online') ) {
+			panels[y].addClass('hideOnline');
 		}
 	}
 }
@@ -111,24 +125,13 @@ function filterAll() {
 
 // filters streamers by name
 function searchName() {
-	var input = $('#searchInput').val();
-	var filter = input.toUpperCase();
-	var name, panel;
+	var input, filter;
+	input = document.getElementById("searchInput");
+	filter = input.value.toUpperCase();
+	console.log(filter);
 
-	for (let a = 0; a < 11; a++) {
-		name = $('#streamer' + a).val();
-		test = name.toUpperCase();
-		panel = $('#panel' + a);
-
-		if (test.indexOf(filter) > -1) {
-			panel.removeClass('hideThis');
-		}
-
-		else {
-			
-			panel.addClass('hideThis');
-		}
-	}
+	
+	
 }
 
 
