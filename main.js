@@ -2,6 +2,8 @@ $(document).ready();
 
 //cache the DOM
 var $filterButton = $('#filterButton');
+var $close = $('#close');
+var $body = $('#body');
 var $panel0 = $('#panel0');
 var $panel1 = $('#panel1');
 var $panel2 = $('#panel2');
@@ -71,6 +73,8 @@ function openNav() {
 	document.body.style.marginLeft = '250px';
 	document.body.style.marginRight = '-250px';
 	document.body.style.overflow = 'hidden';
+
+	$('body').addClass('sideNavOpen');
 }
 
 // closes side naviagtion and returns body to original position
@@ -79,6 +83,8 @@ function closeNav() {
 	document.body.style.marginLeft = '0';
 	document.body.style.marginRight = '0';
 	document.body.style.overflow = 'visible';
+
+	$('body').removeClass('sideNavOpen');
 }
 
 // hides all offline streamers, shows only online streamers
@@ -145,9 +151,11 @@ function searchName() {
 	}
 }
 
-
 // populate streamer info when page loads
 getStreamerInfo();
 
 // on click of filter button
 $filterButton.on('click', openNav);
+
+// on click of X button 
+$close.on('click', closeNav);
