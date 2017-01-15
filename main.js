@@ -125,13 +125,22 @@ function filterAll() {
 
 // filters streamers by name
 function searchName() {
-	var input, filter;
+	var input, filter, name;
 	input = document.getElementById("searchInput");
 	filter = input.value.toUpperCase();
-	console.log(filter);
 
-	
-	
+	for (let a = 0; a < panels.length; a++) {
+		name = $('#streamer' + a).html();
+		name = name.toUpperCase();
+		
+		if (name.indexOf(filter) > -1) {
+			panels[a].removeClass("hideThis");
+		}
+
+		else {
+			panels[a].addClass("hideThis");
+		}
+	}
 }
 
 
