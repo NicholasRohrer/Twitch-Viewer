@@ -159,3 +159,6 @@ $filterButton.on('click', openNav);
 
 // on click of X button 
 $close.on('click', closeNav);
+
+// need to impletment clicking on body to close side nav
+// code here
